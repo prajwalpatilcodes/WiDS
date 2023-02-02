@@ -122,8 +122,8 @@ main {
 .speakers-content {
     display: flex;
     margin-top: 3em;
-    /* margin-left: 20vw;
-    margin-right: 20vw; */
+    flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
     margin-bottom: 3em;
     justify-content: center;
@@ -131,9 +131,10 @@ main {
 
 .speakers-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    /* align-items: center; */
     margin: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 
@@ -157,12 +158,17 @@ main {
 
 .speakers-topic {
     letter-spacing: -0.03em;
-    text-align: center;
 }
 
 .speakers-image img {
     width: 15em;
     border-radius: 0.2em;
+}
+
+.speaker-bio {
+    max-width: 25vw;
+    margin: 1.5em;
+    letter-spacing: -0.02em;
 }
 
 .organizer {
@@ -210,8 +216,6 @@ main {
     text-align: center;
 }
 
-
-
 .organizer-desn {
     font-size: 0.8em;
 }
@@ -219,6 +223,14 @@ main {
 .organizer-desc {
     margin-bottom: 0.2em;
     font-size: 0.85em;
+}
+
+.og-all {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -261,6 +273,30 @@ main {
     .speakers-title {
         font-size: 2em;
         margin-bottom: 0.5em;
+    }
+
+    .speakers-item {
+        flex-direction: column;
+    }
+
+    .speakers-item div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .speakers-topic {
+        text-align: center;
+    }
+
+    .speaker-bio {
+        max-width: none;
+        padding: inherit;
+        margin: 1em;
+    }
+
+    .speakers-content {
+        align-content: center;
     }
 
     .organizer {
