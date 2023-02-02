@@ -166,6 +166,10 @@ main {
 }
 
 .organizer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 2em;
 }
 
@@ -197,6 +201,24 @@ main {
     font-weight: 400;
     letter-spacing: -0.03em;
     text-align: center;
+}
+
+.organizer-desn {
+    margin-top: 0.1em;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+
+
+.organizer-desn {
+    font-size: 0.8em;
+}
+
+.organizer-desc {
+    margin-bottom: 0.2em;
+    font-size: 0.85em;
 }
 
 @media only screen and (max-width: 480px) {
