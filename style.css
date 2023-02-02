@@ -170,7 +170,7 @@ main {
 }
 
 .organizer-image img {
-    border-radius: 0.5em;
+    border-radius: 75px;
     width: 150px;
     height: 150px;
 }
@@ -188,6 +188,13 @@ main {
 .organizer-name {
     margin-top: 0.7em;
     font-weight: 600;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.organizer-desc {
+    margin-top: 0.2em;
+    font-weight: 400;
     letter-spacing: -0.03em;
     text-align: center;
 }
@@ -234,4 +241,7 @@ main {
         margin-bottom: 0.5em;
     }
 
+    .organizer {
+        margin: 0.5em;
+    }
 }
