@@ -337,6 +337,24 @@ main {
     width: 98vw;
 }
 
+.footer-main {
+    background-color: var(--black);
+    min-height: 5vh;
+    color: white;
+    padding: 1em;
+}
+
+.footer-main div {
+
+    display: flex;
+    justify-content: center;
+}
+
+.archive-title {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
 @media only screen and (max-width: 480px) {
     .details {
         margin: 2em;
