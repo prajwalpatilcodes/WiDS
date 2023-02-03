@@ -1,6 +1,7 @@
 :root {
     --red: #bc242c;
     --black: #2f2d2d;
+    --green: #2b5a32;
 }
 
 body {
@@ -40,7 +41,7 @@ main {
 }
 
 .jumbotron-text {
-    background-color: var(--red);
+    background-color: var(--green);
     padding: 0.7em 0em 0.2em 0em;
     font-size: 2.5em;
     font-weight: 700;
@@ -71,9 +72,9 @@ main {
     font-size: 0.30em;
     letter-spacing: -0.01em;
     border-radius: 0.5em;
-    background-color: var(--red);
+    background-color: var(--green);
     align-self: center;
-    border: 2px solid var(--red);
+    border: 2px solid var(--green);
 }
 
 .cta-button:hover {
@@ -99,8 +100,8 @@ main {
 
 .details {
     margin-top: 3em;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    max-width: 60vw;
+    margin: 2em;
     margin-bottom: 3em;
     letter-spacing: -0.01em;
     text-align: justify;
@@ -108,6 +109,18 @@ main {
 }
 
 .speakers-title {
+    background-color: var(--green);
+    padding: 0.5em 0em 0.5em 0em;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: white;
+    text-align: center;
+    align-items: center;
+
+}
+
+.committee-title {
     background-color: var(--red);
     padding: 0.5em 0em 0.5em 0em;
     font-size: 2.5em;
@@ -176,7 +189,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 .organizer-image img {
@@ -187,10 +201,10 @@ main {
 
 .organizers-details {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 3em;
     padding-bottom: 4em;
-    flex-direction: row;
     align-content: center;
     justify-content: center;
 }
@@ -233,9 +247,100 @@ main {
     justify-content: center;
 }
 
+
+.co-org {
+    display: flex;
+    justify-content: center;
+}
+
+.orgs {
+    display: flex;
+    justify-content: center;
+}
+
+.group-title {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+.advisors {
+    display: flex;
+    flex-direction: column;
+}
+
+.advisors div {
+    display: flex;
+}
+
+.speakers-content {
+    flex-direction: row;
+}
+
+.speakers-item {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+.linkedin-link {
+    color: purple;
+    text-decoration: underline;
+}
+
+.details-section {
+    display: flex;
+}
+
+.updates-section {
+    margin: 2em;
+}
+
+.update-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-bottom: 1em;
+}
+
+.update-item {
+    letter-spacing: -0.02em;
+}
+
+.join-button {
+    margin: 1em;
+    font-size: 1em;
+    color: white;
+}
+
+.update-image {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    justify-items: center;
+
+}
+
+.update-image img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.details-section {
+    width: 98vw;
+}
+
 @media only screen and (max-width: 480px) {
     .details {
         margin: 2em;
+        max-width: fit-content;
     }
 
     .jumbotron-text {
@@ -275,6 +380,11 @@ main {
         margin-bottom: 0.5em;
     }
 
+    .committee-title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
     .speakers-item {
         flex-direction: column;
     }
@@ -301,5 +411,23 @@ main {
 
     .organizer {
         margin: 0.5em;
+    }
+
+    .advisors div {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .orgs {
+        flex-direction: column;
+    }
+
+    .advisors-title {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .details-section {
+        flex-direction: column;
     }
 }
